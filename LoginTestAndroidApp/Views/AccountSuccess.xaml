@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginTestAndroidApp.Views.AccountSuccess" NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid RowSpacing="0" Padding="5,0,5,0" Margin="5" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.3*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Success" Grid.Row="0" 
+                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Style="{StaticResource HeaderTextStyle}" TextColor="Green" />
+            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" HorizontalOptions="CenterAndExpand" VerticalOptions="End" >
+							<Image Source="Success.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" >
+							</Image>
+                </StackLayout>
+
+             <Label Text="Account Successfully Created" Grid.Row="2" 
+                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        FontSize="Small" TextColor="Black"/>
+
+             <Button Grid.Row="3" Grid.Column="0" Margin="10,0,10,0"
+                     Text="Login Now?" BorderColor="White" BorderWidth="3" Clicked="Button_Clicked" HeightRequest="20"/>
+         </Grid>
+    </ContentPage.Content>
+</ContentPage>

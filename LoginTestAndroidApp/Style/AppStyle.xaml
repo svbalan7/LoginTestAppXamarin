@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xaml-comp compile="true"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    <OnPlatform x:TypeArguments="x:String" x:Key="Roboto-Regular">
+        <On Platform="Android" Value="Roboto-Regular.ttf#Roboto-Regular" />
+        <On Platform="iOS" Value="Roboto-Regular" />
+    </OnPlatform>
+   
+    <Font x:Key="ScreenHeader">Bold,24</Font>
+
+    <Style x:Key="HeaderTextStyle" TargetType="Label">
+        <Setter Property="Font" Value="{StaticResource ScreenHeader}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto-Regular}" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style x:Key="TextBoxStyle" TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="FontSize" Value="Default" />
+        <Setter Property="VerticalOptions" Value="Start" />
+    </Style>
+
+    <Style x:Key="CustomButtonStyle" TargetType="Button">
+        <Setter Property="BorderColor" Value="White" />
+        <Setter Property="BorderWidth" Value="3" />
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="BackgroundColor" Value="Red" />
+        <Setter Property="TextColor" Value="White" />
+
+    </Style>
+    
+</ResourceDictionary>
